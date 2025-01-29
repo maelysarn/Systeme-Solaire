@@ -1,5 +1,5 @@
 function createStars(){
-    const planet = document.querySelector("body");
+    const body = document.querySelector("body");
     for(let i=0; i < 500; i++){
         const star1 = document.createElement("div");
         star1.className = "star";
@@ -10,7 +10,7 @@ function createStars(){
         star1.style.top =  Math.random() * 100 + "%";
         star1.style.left =  Math.random() * 100 + "%";
 
-        planet.appendChild(star1);
+        body.appendChild(star1);
 
         const star2 = document.createElement("div");
         star2.className = "star";
@@ -21,19 +21,19 @@ function createStars(){
         star2.style.top =  Math.random() * 100 + "%";
         star2.style.left =  Math.random() * 100 + "%";
 
-        planet.appendChild(star2);
+        body.appendChild(star2);
     }
 }
 
 createStars();
 
 const infoBox = document.getElementById("info-box");
-const planetImages = document.querySelectorAll(".planet-body"); 
+const bodyImages = document.querySelectorAll(".body-body"); 
 
-planetImages.forEach(img => {
+bodyImages.forEach(img => {
     img.addEventListener("mouseover", () => {
-        const planet = img.parentElement; // parent div .planet
-        const text = planet.getAttribute("data-text"); 
+        const body = img.parentElement; // parent div .body
+        const text = body.getAttribute("data-text"); 
 
         infoBox.textContent = text;
         infoBox.style.opacity = "1"; 
