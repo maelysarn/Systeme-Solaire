@@ -1,10 +1,11 @@
 function createStars(){
     const planet = document.querySelector("body");
-    for(let i=0; i < 1000; i++){
+    for(let i=0; i < 500; i++){
         const star1 = document.createElement("div");
-        star1.className = "star1";
-        star1.style.height = "4px";
-        star1.style.width = "4px";
+        star1.className = "star";
+        star1.id = "star1";
+        star1.style.height = "1px";
+        star1.style.width = "1px";
 
         star1.style.top =  Math.random() * 100 + "%";
         star1.style.left =  Math.random() * 100 + "%";
@@ -12,9 +13,10 @@ function createStars(){
         planet.appendChild(star1);
 
         const star2 = document.createElement("div");
-        star2.className = "star1";
-        star2.style.height = "4px";
-        star2.style.width = "4px";
+        star2.className = "star";
+        star2.id = "star2";
+        star2.style.height = "1px";
+        star2.style.width = "1px";
 
         star2.style.top =  Math.random() * 100 + "%";
         star2.style.left =  Math.random() * 100 + "%";

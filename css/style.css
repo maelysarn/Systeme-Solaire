@@ -33,16 +33,22 @@ img {
     width: 130%;
 }
 
-.star1 {
+.star {
     position: absolute;
-    background-color: rgb(192, 197, 54);
     border-radius: 50%;
     z-index: -1;
 }
 
-.star2 {
+#star1 {
     position: absolute;
-    background-color: white;
+    background-color: rgb(197, 158, 40);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#star2 {
+    position: absolute;
+    background-color: rgb(247, 245, 106);
     border-radius: 50%;
     z-index: -1;
 }
