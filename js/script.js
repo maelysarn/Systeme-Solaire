@@ -3,8 +3,8 @@ function createStars(){
     for(let i=0; i < 500; i++){
         const star1 = document.createElement("div");
         star1.className = "star1";
-        star1.style.height = ".1px";
-        star1.style.width = ".1px";
+        star1.style.height = "2px";
+        star1.style.width = "2px";
 
         star1.style.top =  Math.random() * 100 + "%";
         star1.style.left =  Math.random() * 100 + "%";
