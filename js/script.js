@@ -28,12 +28,11 @@ function createStars(){
 createStars();
 
 const infoBox = document.getElementById("info-box");
-const bodyImages = document.querySelectorAll(".body-body"); 
+const planets = document.querySelectorAll(".planet"); 
 
-bodyImages.forEach(img => {
+planets.forEach(img => {
     img.addEventListener("mouseover", () => {
-        const body = img.parentElement; // parent div .body
-        const text = body.getAttribute("data-text"); 
+        const text = img.getAttribute("data-text"); 
 
         infoBox.textContent = text;
         infoBox.style.opacity = "1"; 
